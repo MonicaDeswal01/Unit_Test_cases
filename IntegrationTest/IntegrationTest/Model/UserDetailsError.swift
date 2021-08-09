@@ -8,6 +8,7 @@
 import Foundation
 
 enum UserDetailsError: Error {
-    
+    case reponseModelParsingError
+    case blankURLError
 }
 

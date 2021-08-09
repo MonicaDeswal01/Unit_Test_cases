@@ -19,6 +19,7 @@
 		FB244F3926C13A43003F231C /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3826C13A43003F231C /* UserDetailsModel.swift */; };
 		FB244F3B26C13A78003F231C /* UserDetailsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3A26C13A78003F231C /* UserDetailsError.swift */; };
 		FB244F4026C1417A003F231C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3F26C1417A003F231C /* MockURLProtocol.swift */; };
+		FB244F4326C14639003F231C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F4226C14639003F231C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		FB244F3826C13A43003F231C /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
 		FB244F3A26C13A78003F231C /* UserDetailsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsError.swift; sourceTree = "<group>"; };
 		FB244F3F26C1417A003F231C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		FB244F4226C14639003F231C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		FB244F0326C13659003F231C /* IntegrationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FB244F4126C14629003F231C /* Constant */,
 				FB244F3E26C13B3E003F231C /* Controller */,
 				FB244F3D26C13B2D003F231C /* Network */,
 				FB244F3C26C13B20003F231C /* Model */,
@@ -162,6 +165,14 @@
 				FB244F0826C13659003F231C /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		FB244F4126C14629003F231C /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				FB244F4226C14639003F231C /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				FB244F0926C13659003F231C /* ViewController.swift in Sources */,
 				FB244F0526C13659003F231C /* AppDelegate.swift in Sources */,
 				FB244F3926C13A43003F231C /* UserDetailsModel.swift in Sources */,
+				FB244F4326C14639003F231C /* Constants.swift in Sources */,
 				FB244F3726C13799003F231C /* UserDetailsWebService.swift in Sources */,
 				FB244F0726C13659003F231C /* SceneDelegate.swift in Sources */,
 			);

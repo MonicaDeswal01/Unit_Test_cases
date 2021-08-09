@@ -18,7 +18,7 @@ struct UserDetailsWebService {
 
     func requestTheUserDetails(completionHandler: @escaping(UserDetailsModel?, UserDetailsError?) -> Void) {
         guard let url = URL(string: urlString) else {
-            //TODO: Handle invalid url
+            completionHandler(nil, .blankURLError)
             return
         }
 
@@ -33,7 +33,7 @@ struct UserDetailsWebService {
              completionHandler(userDetailModel, nil)
             } else {
                 //TODO error handling
-
+                completionHandler(nil, .reponseModelParsingError)
             }
 
         }
