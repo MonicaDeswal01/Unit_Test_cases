@@ -13,8 +13,12 @@
 		FB244F0C26C13659003F231C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB244F0A26C13659003F231C /* Main.storyboard */; };
 		FB244F0E26C1365A003F231C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB244F0D26C1365A003F231C /* Assets.xcassets */; };
 		FB244F1126C1365A003F231C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB244F0F26C1365A003F231C /* LaunchScreen.storyboard */; };
-		FB244F1C26C1365A003F231C /* IntegrationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F1B26C1365A003F231C /* IntegrationTestTests.swift */; };
 		FB244F2726C1365A003F231C /* IntegrationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F2626C1365A003F231C /* IntegrationTestUITests.swift */; };
+		FB244F3526C1376F003F231C /* UserDetailsWebServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3426C1376F003F231C /* UserDetailsWebServiceTest.swift */; };
+		FB244F3726C13799003F231C /* UserDetailsWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3626C13799003F231C /* UserDetailsWebService.swift */; };
+		FB244F3926C13A43003F231C /* UserDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3826C13A43003F231C /* UserDetailsModel.swift */; };
+		FB244F3B26C13A78003F231C /* UserDetailsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3A26C13A78003F231C /* UserDetailsError.swift */; };
+		FB244F4026C1417A003F231C /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244F3F26C1417A003F231C /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +48,15 @@
 		FB244F1026C1365A003F231C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB244F1226C1365A003F231C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB244F1726C1365A003F231C /* IntegrationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB244F1B26C1365A003F231C /* IntegrationTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTestTests.swift; sourceTree = "<group>"; };
 		FB244F1D26C1365A003F231C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB244F2226C1365A003F231C /* IntegrationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntegrationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB244F2626C1365A003F231C /* IntegrationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationTestUITests.swift; sourceTree = "<group>"; };
 		FB244F2826C1365A003F231C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB244F3426C1376F003F231C /* UserDetailsWebServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsWebServiceTest.swift; sourceTree = "<group>"; };
+		FB244F3626C13799003F231C /* UserDetailsWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsWebService.swift; sourceTree = "<group>"; };
+		FB244F3826C13A43003F231C /* UserDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModel.swift; sourceTree = "<group>"; };
+		FB244F3A26C13A78003F231C /* UserDetailsError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsError.swift; sourceTree = "<group>"; };
+		FB244F3F26C1417A003F231C /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 		FB244F0326C13659003F231C /* IntegrationTest */ = {
 			isa = PBXGroup;
 			children = (
+				FB244F3E26C13B3E003F231C /* Controller */,
+				FB244F3D26C13B2D003F231C /* Network */,
+				FB244F3C26C13B20003F231C /* Model */,
 				FB244F0426C13659003F231C /* AppDelegate.swift */,
 				FB244F0626C13659003F231C /* SceneDelegate.swift */,
-				FB244F0826C13659003F231C /* ViewController.swift */,
 				FB244F0A26C13659003F231C /* Main.storyboard */,
 				FB244F0D26C1365A003F231C /* Assets.xcassets */,
 				FB244F0F26C1365A003F231C /* LaunchScreen.storyboard */,
@@ -113,8 +123,9 @@
 		FB244F1A26C1365A003F231C /* IntegrationTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				FB244F1B26C1365A003F231C /* IntegrationTestTests.swift */,
 				FB244F1D26C1365A003F231C /* Info.plist */,
+				FB244F3426C1376F003F231C /* UserDetailsWebServiceTest.swift */,
+				FB244F3F26C1417A003F231C /* MockURLProtocol.swift */,
 			);
 			path = IntegrationTestTests;
 			sourceTree = "<group>";
@@ -126,6 +137,31 @@
 				FB244F2826C1365A003F231C /* Info.plist */,
 			);
 			path = IntegrationTestUITests;
+			sourceTree = "<group>";
+		};
+		FB244F3C26C13B20003F231C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB244F3826C13A43003F231C /* UserDetailsModel.swift */,
+				FB244F3A26C13A78003F231C /* UserDetailsError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FB244F3D26C13B2D003F231C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FB244F3626C13799003F231C /* UserDetailsWebService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FB244F3E26C13B3E003F231C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB244F0826C13659003F231C /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB244F3B26C13A78003F231C /* UserDetailsError.swift in Sources */,
 				FB244F0926C13659003F231C /* ViewController.swift in Sources */,
 				FB244F0526C13659003F231C /* AppDelegate.swift in Sources */,
+				FB244F3926C13A43003F231C /* UserDetailsModel.swift in Sources */,
+				FB244F3726C13799003F231C /* UserDetailsWebService.swift in Sources */,
 				FB244F0726C13659003F231C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB244F1C26C1365A003F231C /* IntegrationTestTests.swift in Sources */,
+				FB244F3526C1376F003F231C /* UserDetailsWebServiceTest.swift in Sources */,
+				FB244F4026C1417A003F231C /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
